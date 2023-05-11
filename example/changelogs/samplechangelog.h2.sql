@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset detavius.niblack:1
+--changeset your.name:1
 --rollback DROP TABLE person;
 create table person (
     id int primary key,
@@ -11,7 +11,7 @@ create table person (
     state varchar(2)
 )
 
---changeset detavius.niblack:2
+--changeset your.name:2
 --rollback DROP TABLE company;
 create table company (
     id int primary key,
@@ -21,7 +21,7 @@ create table company (
     city varchar(30)
 )
 
---changeset detavius.niblack:3
+--changeset your.name:3
 --rollback DROP TABLE yourname;
 create table yourname (
     id int primary key,
