@@ -11,6 +11,9 @@ jobs:
           operation: 'update'
           classpath: 'example/changelogs'
           changeLogFile: 'samplechangelog.h2.sql'
-          username: # ${{ secrets.USERNAME }}
-          password: # ${{ secrets.PASSWORD }}
-          url:  # ${{ secrets.URL }}
+          # username: # ${{ secrets.USERNAME }}
+          # password: # ${{ secrets.PASSWORD }}
+          # url:  # ${{ secrets.URL }}
+          username: root 
+          password: ThisIsANewPassword22
+          url: jdbc:mysql://localhost:3306/e-commerce_cart
