@@ -41,6 +41,6 @@ alter table company add column country varchar(2)
 
 logLevel: info
 changeLogFile: samplechangelog.h2.sql
-url: jdbc:h2:file:./h2tutorial
-username: liquibase
-password: password
+url:jdbc:mysql://localhost:3306/e-commerce_cart
+username:root
+password:ThisIsANewPassword22
