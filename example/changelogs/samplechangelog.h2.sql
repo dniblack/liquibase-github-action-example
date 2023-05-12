@@ -20,6 +20,13 @@ create table company (
     city varchar(30)
 )
 
+--changeset yourname:detaviusniblack1
+--rollback DROP TABLE detaviusniblack;
+CREATE TABLE yourname (
+    id int primary key,
+    name varchar(50) not null
+)
+
 --changeset other.dev:3
 --rollback ALTER TABLE person DROP COLUMN country;
 alter table person add column country varchar(2)
@@ -31,3 +38,9 @@ alter table person add column state varchar(2)
 --changeset other.dev:5
 --rollback ALTER TABLE company DROP COLUMN country;
 alter table company add column country varchar(2)
+
+logLevel: info
+changeLogFile: samplechangelog.h2.sql
+url: jdbc:h2:file:./h2tutorial
+username: liquibase
+password: password
