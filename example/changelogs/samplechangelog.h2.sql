@@ -7,7 +7,8 @@ create table person (
     name varchar(50) not null,
     address1 varchar(50),
     address2 varchar(50),
-    city varchar(30)
+    city varchar(30),
+    state varchar(2)
 )
 
 --changeset your.name:2
@@ -18,6 +19,15 @@ create table company (
     address1 varchar(50),
     address2 varchar(50),
     city varchar(30)
+)
+
+--changeset your.name:3
+--rollback DROP TABLE yourname;
+create table yourname (
+    id int primary key,
+    first_name varchar(50) not null,
+    last_name varchar(50) not null,
+    middle_ini varchar(5) not null
 )
 
 --changeset other.dev:3
